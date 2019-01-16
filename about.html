@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pizza Palace - About Us</title>
+	<style>
+		.customer{
+			font-style:italic;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<script>
+		function myFunction(){
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav"){
+				x.className += " responsive";
+			}else{
+				x.className = "topnav";
+			}
+		}
+	</script>
+</head>
+
+
+<body>
+	<header>
+		Pizza Palace
+	</header>
+	
+	<nav>
+		<ul id="myTopnav" class="topnav">
+			<li> <a href="index.html" title="Return to site main page">Main</a></li>
+			<li> <a href="menu.html" title="View current menu">Menu</a></li>
+			<li> <a href="order.html" title="About our restaurant">Place Order</a></li>
+			<li> <a href="specials.html" title="View today's specials">Specials</a></li>
+			<li> <a href="opportunity.html" title="Employment opportunities">Opportunity</a></li>
+			<li> <a href="about.html" title="About our restaurant" class="viewing">About Us</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<article>
+		<mainimage>
+			<img src="images/pizza-oven.png" title="The best pizza around" alt="A slice of pizza">
+		</mainimage>
+
+		<h2>About us</h2>
+
+		<h4>
+			Brothers Mario and Luigi have one goal in life: to make the best pizza in the world! Enjoy any our pizzas today.
+		</h4>
+		<pre>
+
+
+
+
+		</pre>
+		<h3>
+			Reviews (3)
+		</h3>
+		<div id="review1">
+			&quot;My friends and I always to go to Pizza Palace for our monthly pizza parties. The staff are very helpful and friendly.&quot;
+			<span class="customer">P. Peachsan</span>
+		</div>
+		<div id="review2">
+			&quot;...the best Hawaiian outside of Maui. They make it just the way I like it: thin crust with extra pineapple.&quot;
+			<span class="customer">K. Kappa</span>
+		</div>
+		<div id="review3">
+			&quot;...awesome pepperoni and mushroom combo for me. I always barrel over there after work and pick up the special.&quot;
+			<span class="customer">D. Kingkong</span>
+		</div>
+	</article>
+	
+	<footer>
+		Copyright &copy; 2016
+	</footer>
+	
+	
+</body>
+</html>

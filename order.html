@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Place your Order</title>
+	<style>
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/orderForm.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<script>
+		function myFunction(){
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav"){
+				x.className += " responsive";
+			}else{
+				x.className = "topnav";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		Pizza Palace
+	</header>
+	
+	<nav>
+		<ul id="myTopnav" class="topnav">
+			<li> <a href="index.html" title="Return to site main page">Main</a></li>
+			<li> <a href="menu.html" title="View current menu">Menu</a></li>
+			<li> <a href="order.html" title="About our restaurant" class="viewing">Place Order</a></li>
+			<li> <a href="specials.html" title="View today's specials">Specials</a></li>
+			<li> <a href="opportunity.html" title="Employment opportunities">Opportunity</a></li>
+			<li> <a href="about.html" title="About our restaurant">About Us</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+			</li>
+
+		</ul>
+	</nav>
+	
+	<article>
+		<mainimage>
+			<img src="images/pizza-oven.png" title="The best pizza around" alt="A slice of pizza">
+		</mainimage>
+		<form name="menuorder" method="post"
+			  id="formbox"
+			  action="script/processform.php">		
+		  <fieldset>
+				<legend>Place your order</legend>
+				<label for="firstname">First name:</label>
+					<input type="text" 
+						   name="firstname"
+						   required
+						   id="firstname"
+						   placeholder="Your first name">
+				<label for="lastname">Last name:</label>
+					<input type="text"
+						   name="lastname"
+						   required
+						   id="lastname"
+						   placeholder="Your last name">
+				<label for="phone">Phone:</label>
+					<input type="tel"
+						   name="phone"
+						   id="phone"
+						   placeholder="(250) 999-9999"
+						   pattern="[\(]\d{3}[\)]\s*\d{3}[\-]\d{4}"
+						   required>
+			  	<label for="credit">Credit Card</label>
+			  		<input type="text"
+						   name="credit"
+						   id="credit"
+						   placeholder="99999"
+						   pattern="[0-9]{4,6}"
+						   required>
+			  	<label for="expiry">Expiry Date (MM-YY):</label>
+			  		<input type="text"
+						   name="expiry"
+						   title="Credit card expiry as MM-YY"
+						   id="expiry"
+						   placeholder="01-13"
+						   pattern="\d{2}[\-]\d{2}"
+						   required>
+			<fieldset>
+			  	<legend>Select type of pizza</legend>
+			  		<input type="radio"
+						   name="pizza"
+						   value="cheese"
+						   id="cheese">
+			  		<label for="cheese"> Cheese </label><br>
+			  		<input type="radio"
+						   name="pizza"
+						   value="pepperoni"
+						   id="pepperoni">
+			  		<label for="pepperoni"> Pepperoni </label><br>
+			  		<input type="radio"
+						   name="pizza"
+						   value="hawaiian"
+						   id="hawaiian">
+					<label for="hawaiian"> Hawaiian </label><br>
+			</fieldset>
+			<fieldset>
+			  	<legend>Select size of pizza</legend>
+			  		<select name="size" id="size">
+			  			<option value="" selected="selected">
+							Individual
+						</option>
+						
+						<option value="medium">
+							Medium
+						</option>
+						
+						<option value="Large">
+							Large
+						</option>
+			  		</select>
+			</fieldset>
+			<fieldset>
+			 	<legend>Select any toppings</legend>
+			  		<input type="checkbox"
+						   name="topping[]"
+						   value="tomato"
+						   id="tomato">
+			 		 <label for="tomato">Tomato Sauce</label><br>
+					<input type="checkbox"
+						   name="topping[]"
+						   value="greenpepper"
+						   id="greenpepper">
+			  		<label for="greenpepper">Green Pepper</label><br>
+					<input type="checkbox"
+						   name="topping[]"
+						   value="mushroom"
+						   id="mushroom">
+			  		<label for="mushroom">Mushroom</label><br>
+			  		<input type="checkbox"
+						   name="topping[]"
+						   value="pepptoping"
+						   id="pepptoping">
+			  		<label for="pepptoping">Pepperoni</label><br>
+			  		<input type="checkbox"
+						   name="topping[]"
+						   value="pineapple"
+						   id="pineapple">
+			  		<label for="pineapple">Pineapple</label><br>
+			</fieldset>
+			<fieldset>
+			  	<legend>Select pizza quantity</legend>
+			  		<input type="number"
+						   name="quantity"
+						   value="1"
+						   min="1"
+						   max="20"
+						   required>
+			</fieldset>
+			<fieldset>
+			  	<legend>Select order type</legend>
+			  		<input type="radio"
+						   name="order"
+						   value="pickup"
+						   id="pickup">
+			  		<label for="pickup"> Pickup </label>
+			  		<input type="radio"
+						   name="order"
+						   value="delivery"
+						   id="delivery">
+			  		<label for="delivery"> Delivery </label>
+			</fieldset>
+			  	
+			  	<input type="submit"
+					   name="submit"
+					   value="Place order">
+			  
+			  	<input type="reset"
+					   name="submit"
+					   value="Reset order">
+			  	
+			  
+					   
+			</fieldset>
+			
+		</form>
+		
+	</article>
+	
+	<footer>
+		Copyright &copy; 2016
+	</footer>
+	
+	
+</body>
+</html>

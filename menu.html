@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pizza Palace - Menu Selections</title>
+	<style>
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<script>
+		function myFunction(){
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav"){
+				x.className += " responsive";
+			}else{
+				x.className = "topnav";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		Pizza Palace
+	</header>
+	
+	<nav>
+		<ul id="myTopnav" class="topnav">
+			<li> <a href="index.html" title="Return to site main page">Main</a></li>
+			<li> <a href="menu.html" title="View current menu" class="viewing">Menu</a></li>
+			<li> <a href="order.html" title="About our restaurant">Place Order</a></li>
+			<li> <a href="specials.html" title="View today's specials">Specials</a></li>
+			<li> <a href="opportunity.html" title="Employment opportunities">Opportunity</a></li>
+			<li> <a href="about.html" title="About our restaurant">About Us</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+			</li>
+
+		</ul>
+	</nav>
+	
+	<article>
+		<mainimage>
+			<img src="images/pizza-oven.png" title="The best pizza around" alt="A slice of pizza">
+		</mainimage>
+		<section>
+
+			<h2 class="menu">Menu</h2>
+			<pre>
+
+
+
+			</pre>
+
+			<h4>Pizza Selections:</h4>
+
+			<table>
+				<tr>
+    				<td>
+    					Cheese Pizza - $10
+    				</td>
+    				<td>
+    					<img src="images/cheese.jpg" alt="Chesse" class="column" id="cheese">
+    				</td>
+    			<tr>
+    				<td>
+    					Pepperoni Pizza - $12 
+    				</td>
+    				<td>
+    					<img src="images/hawaiian.jpg" alt="Hawaiian" class="column">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					Hawaiian Pizza - $12
+    				</td>
+    				<td>
+    					<img src="images/pep.png" alt="Pepperoni" class="column">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					Vegetarian Pizza - $8
+    				</td>
+    				<td>
+    					<img src="images/vegi.jpg" alt="Pepperoni" class="column">
+    				</td>
+
+				</tr>
+			</table>
+
+			
+			<h4>Toppings</h4>
+				<ul>
+					<li>mushrooms</li>
+					<li>green pepper</li>
+					<li>zucchini</li>
+					<li>jalape&ntilde;o pepper</li>
+				</ul>
+		</section>
+	</article>
+	
+	<footer>
+		Copyright &copy; 2016
+	</footer>
+	
+	
+</body>
+</html>

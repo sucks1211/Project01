@@ -1,0 +1,183 @@
+/* CSS Document */
+/*Regular*/
+body{
+	background-color: ivory;
+	margin:auto;
+}
+
+
+@font-face{
+	font-family: 'League Gothic';
+	src: url('webfonts/leaguegothic-regular-webfont.eot');
+	src: url('webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+		url('webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+		url('webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+nav{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 8px 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: #808080;
+	box-shadow: 2px 7px 9px -2px rgba(0,0,0,0.33);
+}
+
+nav ul li{
+	float: left;
+}
+nav ul li a {
+	font-family: 'League Gothic', serif;
+	color: #f2f2f2;
+   	padding-left: 50px;
+    padding-right: 50px;
+    border-right:2px solid rgba(255,255,255,.23);
+	margin-left: 0;
+	text-decoration: none;
+	transition: 0.3s;
+	front-size: 20px;
+
+}
+
+header {
+	font-size: 36px;
+	font-family: Constantia, "Courier Newmonospace";
+					/*Firefox*/
+	background: -moz-linear-gradient(top, #770000, #ff0000); 		
+					/*Google Crome*/
+	background: -webkit-gradient(linear,left bottom, 				
+		left top, color-stop(0, #ff0000),color-stop(1, #770000)); 	
+					/*Internet explorer*/
+	filter: progid:DXImageTransform.Microsoft.gradient
+		(starColorstr='#ff0000', endColorstr='#770000',GradientType=0);	
+	background: -o-linear-gradient(top, #ff0000 0%, #770000 100%);
+}
+		
+header, footer{
+	padding: 1em;
+	color: yellow;
+	background-color: red;
+	clear: left;
+	text-align: center;
+			
+}
+.viewing{
+	color: yellow;
+	outline: solid yellow 1px;
+}
+
+nav ul li a:hover{
+	background-color: blue;
+}
+
+#review1 {
+	padding:20px;
+	margin: 20px;
+	width: 120px;
+	border: 2px solid coral;
+	border-radius:15px;
+	background-color: #ff9389;
+	-moz-border-radius: 15px;
+	font-family: Verdana, sans-serif;
+	-webkit-box-shadow: 0 4px 4px 0 #C2C2C2;
+	box-shadow: 0 4px 4px 0 #C2C2C2;
+	position:relative;
+}
+#review2 {
+	padding:20px;
+	margin: 20px;
+	width: 130px;
+	border: 2px solid #d1b79b;
+	border-radius:15px;
+	background-color: #f1d7bb;
+	-moz-border-radius: 15px;
+	font-family: Verdana, sans-serif;
+	-webkit-box-shadow: 0 4px 4px 0 #C2C2C2;
+	box-shadow: 0 4px 4px 0 #C2C2C2;
+	position:relative;
+	left:200px;
+}
+#review3 {
+	padding:20px;
+	margin: 20px;
+	width: 140px;
+	border: 2px solid #d5b493;
+	border-radius:15px;
+	background-color: #e5c4a3;
+	-moz-border-radius: 15px;
+	font-family: Verdana, sans-serif;
+	-webkit-box-shadow: 0 4px 4px 0 #C2C2C2;
+	box-shadow: 0 4px 4px 0 #C2C2C2;
+	position:relative;
+	left: 400px;
+
+}
+
+nav ul li.icon{
+	display:none;
+}
+
+@media screen and (max-width:680px) {
+	nav ul li:not(:first-child) {display: none;}
+	nav ul li.icon {
+		float: right;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width:680px){
+	nav ul.responsive {position: relative;}
+	nav ul.responsive li.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	nav ul.responsive li {
+		float: none;
+		display: inline;
+	}
+	nav ul.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+
+article {
+	width:60%;
+  	margin: auto;
+  	background-color: rgba(43,58,66,.2)
+}
+
+
+article img{
+	margin-top: 3px;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 2px 7px 37px -2px rgba(0,0,0,0.5);
+}
+
+h2{
+	text-align: center;
+}
+.indent{
+	text-indent :5em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.column {
+    float: left;
+    width: 35%;
+    padding: 5px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
